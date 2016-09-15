@@ -19,13 +19,13 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
             _player = new Player();
-            _player.CurrentHitPoints = 100;
-            _player.MaximumHitPoints = 100;
+            _player.CurrentHealth = 100;
+            _player.MaximumHealth = 100;
             _player.Gold = 5;
             _player.ExperiencePoints = 0;
             _player.Level = 1;
 
-            lblHealth.Text = _player.CurrentHitPoints.ToString();
+            lblHealth.Text = _player.CurrentHealth.ToString();
             lblGold.Text = _player.Gold.ToString();
             lblXP.Text = _player.ExperiencePoints.ToString();
             lblLevel.Text = _player.Level.ToString();
