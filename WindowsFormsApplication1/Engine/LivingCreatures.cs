@@ -10,6 +10,11 @@ namespace Engine
     {
         public int CurrentHealth { get; set; }
         public int MaximumHealth { get; set; }
-         
+
+        public LivingCreatures(int currentHitPoints, int maximumHitPoints)
+        {
+            CurrentHealth = currentHitPoints;
+            MaximumHealth = maximumHitPoints;
+        }
     }
 }

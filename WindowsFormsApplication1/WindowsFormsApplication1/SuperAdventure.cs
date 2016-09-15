@@ -18,17 +18,20 @@ namespace WindowsFormsApplication1
         public SuperAdventure()
         {
             InitializeComponent();
-            _player = new Player();
-            _player.CurrentHealth = 100;
-            _player.MaximumHealth = 100;
-            _player.Gold = 5;
-            _player.ExperiencePoints = 0;
-            _player.Level = 1;
+            /// initialize location
+            Location location = new Location(1, "Rolahouse Waters Investigators", "A once esteemed agency, veteran London detectives come here to relax in a peaceful town.");
+            ///custom constructor
+            
+
+            _player = new Player(5, 0, 1, "Deputy", 100, 100, "Kathie Tucson");
+  
 
             lblHealth.Text = _player.CurrentHealth.ToString();
             lblGold.Text = _player.Gold.ToString();
             lblXP.Text = _player.ExperiencePoints.ToString();
             lblLevel.Text = _player.Level.ToString();
+            player_name.Text = _player.Name.ToString();
+            lblPlayerJob.Text = _player.Job.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,6 +54,9 @@ namespace WindowsFormsApplication1
 
         }
 
+        private void label4_Click_1(object sender, EventArgs e)
+        {
 
+        }
     }
 }
