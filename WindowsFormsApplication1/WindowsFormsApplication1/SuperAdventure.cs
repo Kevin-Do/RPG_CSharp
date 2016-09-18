@@ -19,10 +19,9 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
             /// initialize location
-            Location location = new Location(1, "Rolahouse Waters Investigators", "A once esteemed agency, veteran London detectives come here to relax in a peaceful town.");
-            ///custom constructor
-            
-
+            Location location = new Location(1, "Rolahouse Waters Investigators", 
+                "A once esteemed agency, veteran London detectives come here to relax in a peaceful town.");
+           
             _player = new Player(5, 0, 1, "Deputy", 100, 100, "Kathie Tucson");
   
 

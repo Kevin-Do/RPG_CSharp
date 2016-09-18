@@ -20,3 +20,14 @@ C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\RPG_CSharp\Windows
 C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\RPG_CSharp\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\RPG_CSharp\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SuperAdventure.resources
 C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\RPG_CSharp\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\RPG C# Basics.exe.config
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\RPG C# Basics.exe
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\RPG C# Basics.pdb
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\RPG C# Basics.exe
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\RPG C# Basics.pdb
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Engine.dll
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Engine.pdb
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\SuperAdventure.csprojResolveAssemblyReference.cache
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SuperAdventure.resources
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache

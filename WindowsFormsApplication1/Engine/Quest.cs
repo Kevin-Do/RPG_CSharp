@@ -13,9 +13,10 @@ namespace Engine
         public string Description { get; set; }
         public int RewardExperience { get; set; }
         public int RewardGold { get; set; }
+        public Item RewardItem { get; set; }
 
         ///constructor
-        
+
         public Quest(int id, string name, string description, int rewardXp, int rewardGold)
         {
             ID = id;

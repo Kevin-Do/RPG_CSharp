@@ -22,12 +22,17 @@ namespace Engine
         public Location LathanielForest { get; set; }
         public Location TownCenter { get; set; }
 
-        /// constructor code, must pass in these 3 values
-        public Location (int id, string name, string description)
+        /// constructor
+    
+        public Location(int id, string name, string description, Item itemRequiredToEnter = null,
+            Quest questAvailableHere = null, Monster monsterLivingHere = null)
         {
             ID = id;
             Name = name;
             Description = description;
+            ItemRequiredToEnter = itemRequiredToEnter;
+            QuestAvailableHere = questAvailableHere;
+            MonsterLivingHere = monsterLivingHere;
         }
     }
 }
