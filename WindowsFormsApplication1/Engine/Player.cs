@@ -26,6 +26,7 @@ namespace Engine
             Level = level;
             Job = job;
             Name = pName;
+
             Inventory = new List<InventoryItem>();
             Quests = new List<PlayerQuest>();
 

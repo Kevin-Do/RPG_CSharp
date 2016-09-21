@@ -17,10 +17,10 @@ namespace Engine
         public Monster MonsterLivingHere { get; set; }
 
         /// locations
-        public Location Cemetery { get; set; }
-        public Location AbandonedChurch { get; set; }
-        public Location LathanielForest { get; set; }
-        public Location TownCenter { get; set; }
+        public Location LocationToNorth { get; set; }
+        public Location LocationToEast { get; set; }
+        public Location LocationToSouth { get; set; }
+        public Location LocationToWest { get; set; }
 
         /// constructor
     
