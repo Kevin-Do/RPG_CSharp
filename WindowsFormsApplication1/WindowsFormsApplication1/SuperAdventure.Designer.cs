@@ -36,10 +36,8 @@
             this.lblHealth = new System.Windows.Forms.Label();
             this.lblXP = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.player_name = new System.Windows.Forms.Label();
             this.lblPlayerJob = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -124,18 +122,6 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "Gold";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(494, 27);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(381, 271);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            // 
             // player_name
             // 
             this.player_name.AutoSize = true;
@@ -163,7 +149,6 @@
             this.ClientSize = new System.Drawing.Size(891, 556);
             this.Controls.Add(this.lblPlayerJob);
             this.Controls.Add(this.player_name);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblGold);
             this.Controls.Add(this.lblHealth);
             this.Controls.Add(this.lblXP);
@@ -181,7 +166,6 @@
             this.Text = "Highgate Hysteria";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.SuperAdventure_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,7 +181,6 @@
         private System.Windows.Forms.Label lblHealth;
         private System.Windows.Forms.Label lblXP;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label player_name;
         private System.Windows.Forms.Label lblPlayerJob;
     }

@@ -14,6 +14,11 @@ namespace Engine
         public string Job { get; set; }
         public string Name { get; set; }
 
+        // Lists //
+
+        public List <InventoryItem> Inventory { get; set; }
+        public List <PlayerQuest> Quests { get; set; }
+
         public Player(int gold, int xp, int level, string job, int CurrentHealth, int MaximumHealth, string pName) : base (CurrentHealth, MaximumHealth)
         {
             Gold = gold;
@@ -21,6 +26,9 @@ namespace Engine
             Level = level;
             Job = job;
             Name = pName;
+            Inventory = new List<InventoryItem>();
+            Quests = new List<PlayerQuest>();
+
         }
     }
 }
