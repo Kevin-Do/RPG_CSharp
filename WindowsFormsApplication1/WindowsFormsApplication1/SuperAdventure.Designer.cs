@@ -39,7 +39,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.player_name = new System.Windows.Forms.Label();
             this.lblPlayerJob = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.cboWeapons = new System.Windows.Forms.ComboBox();
             this.cboPotions = new System.Windows.Forms.ComboBox();
             this.btnUseWeapon = new System.Windows.Forms.Button();
@@ -155,21 +154,10 @@
             this.lblPlayerJob.Size = new System.Drawing.Size(0, 22);
             this.lblPlayerJob.TabIndex = 12;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.label4.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(856, 471);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 25);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Select Action";
-            // 
             // cboWeapons
             // 
             this.cboWeapons.FormattingEnabled = true;
-            this.cboWeapons.Location = new System.Drawing.Point(943, 513);
+            this.cboWeapons.Location = new System.Drawing.Point(697, 620);
             this.cboWeapons.Name = "cboWeapons";
             this.cboWeapons.Size = new System.Drawing.Size(121, 30);
             this.cboWeapons.TabIndex = 14;
@@ -177,7 +165,7 @@
             // cboPotions
             // 
             this.cboPotions.FormattingEnabled = true;
-            this.cboPotions.Location = new System.Drawing.Point(942, 561);
+            this.cboPotions.Location = new System.Drawing.Point(696, 668);
             this.cboPotions.Name = "cboPotions";
             this.cboPotions.Size = new System.Drawing.Size(121, 30);
             this.cboPotions.TabIndex = 15;
@@ -185,27 +173,29 @@
             // btnUseWeapon
             // 
             this.btnUseWeapon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUseWeapon.Location = new System.Drawing.Point(846, 513);
+            this.btnUseWeapon.Location = new System.Drawing.Point(600, 620);
             this.btnUseWeapon.Name = "btnUseWeapon";
             this.btnUseWeapon.Size = new System.Drawing.Size(75, 30);
             this.btnUseWeapon.TabIndex = 16;
             this.btnUseWeapon.Text = "Fight!";
             this.btnUseWeapon.UseVisualStyleBackColor = true;
+            this.btnUseWeapon.Click += new System.EventHandler(this.btnUseWeapon_Click_1);
             // 
             // btnUsePotion
             // 
             this.btnUsePotion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUsePotion.Location = new System.Drawing.Point(846, 561);
+            this.btnUsePotion.Location = new System.Drawing.Point(600, 668);
             this.btnUsePotion.Name = "btnUsePotion";
             this.btnUsePotion.Size = new System.Drawing.Size(75, 30);
             this.btnUsePotion.TabIndex = 17;
             this.btnUsePotion.Text = "Heal!";
             this.btnUsePotion.UseVisualStyleBackColor = true;
+            this.btnUsePotion.Click += new System.EventHandler(this.btnUsePotion_Click_1);
             // 
             // btnNorth
             // 
             this.btnNorth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnNorth.Location = new System.Drawing.Point(654, 473);
+            this.btnNorth.Location = new System.Drawing.Point(696, 473);
             this.btnNorth.Name = "btnNorth";
             this.btnNorth.Size = new System.Drawing.Size(69, 30);
             this.btnNorth.TabIndex = 18;
@@ -216,39 +206,42 @@
             // btnEast
             // 
             this.btnEast.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEast.Location = new System.Drawing.Point(727, 517);
+            this.btnEast.Location = new System.Drawing.Point(769, 517);
             this.btnEast.Name = "btnEast";
             this.btnEast.Size = new System.Drawing.Size(69, 30);
             this.btnEast.TabIndex = 19;
             this.btnEast.Text = "East";
             this.btnEast.UseVisualStyleBackColor = true;
+            this.btnEast.Click += new System.EventHandler(this.btnEast_Click_1);
             // 
             // btnSouth
             // 
             this.btnSouth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSouth.Location = new System.Drawing.Point(654, 565);
+            this.btnSouth.Location = new System.Drawing.Point(696, 565);
             this.btnSouth.Name = "btnSouth";
             this.btnSouth.Size = new System.Drawing.Size(69, 30);
             this.btnSouth.TabIndex = 20;
             this.btnSouth.Text = "South";
             this.btnSouth.UseVisualStyleBackColor = true;
+            this.btnSouth.Click += new System.EventHandler(this.btnWest_Click);
             // 
             // btnWest
             // 
             this.btnWest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnWest.Location = new System.Drawing.Point(577, 517);
+            this.btnWest.Location = new System.Drawing.Point(619, 517);
             this.btnWest.Name = "btnWest";
             this.btnWest.Size = new System.Drawing.Size(69, 30);
             this.btnWest.TabIndex = 21;
             this.btnWest.Text = "West";
             this.btnWest.UseVisualStyleBackColor = true;
+            this.btnWest.Click += new System.EventHandler(this.btnWest_Click_1);
             // 
             // rtbMessages
             // 
-            this.rtbMessages.Location = new System.Drawing.Point(470, 613);
+            this.rtbMessages.Location = new System.Drawing.Point(891, 354);
             this.rtbMessages.Name = "rtbMessages";
             this.rtbMessages.ReadOnly = true;
-            this.rtbMessages.Size = new System.Drawing.Size(662, 82);
+            this.rtbMessages.Size = new System.Drawing.Size(241, 341);
             this.rtbMessages.TabIndex = 22;
             this.rtbMessages.Text = "";
             // 
@@ -257,7 +250,7 @@
             this.rtbLocation.Location = new System.Drawing.Point(29, 613);
             this.rtbLocation.Name = "rtbLocation";
             this.rtbLocation.ReadOnly = true;
-            this.rtbLocation.Size = new System.Drawing.Size(435, 82);
+            this.rtbLocation.Size = new System.Drawing.Size(500, 82);
             this.rtbLocation.TabIndex = 23;
             this.rtbLocation.Text = "";
             // 
@@ -269,15 +262,14 @@
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventory.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvInventory.Enabled = false;
-            this.dgvInventory.Location = new System.Drawing.Point(29, 409);
+            this.dgvInventory.Location = new System.Drawing.Point(29, 354);
             this.dgvInventory.MultiSelect = false;
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.ReadOnly = true;
             this.dgvInventory.RowHeadersVisible = false;
             this.dgvInventory.RowTemplate.Height = 24;
-            this.dgvInventory.Size = new System.Drawing.Size(197, 194);
+            this.dgvInventory.Size = new System.Drawing.Size(197, 249);
             this.dgvInventory.TabIndex = 24;
-            this.dgvInventory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventory_CellContentClick);
             // 
             // dgvQuests
             // 
@@ -324,7 +316,6 @@
             this.Controls.Add(this.btnUseWeapon);
             this.Controls.Add(this.cboPotions);
             this.Controls.Add(this.cboWeapons);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblPlayerJob);
             this.Controls.Add(this.player_name);
             this.Controls.Add(this.lblGold);
@@ -365,7 +356,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label player_name;
         private System.Windows.Forms.Label lblPlayerJob;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cboWeapons;
         private System.Windows.Forms.ComboBox cboPotions;
         private System.Windows.Forms.Button btnUseWeapon;
