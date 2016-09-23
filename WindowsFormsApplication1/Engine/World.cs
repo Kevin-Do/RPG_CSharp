@@ -109,7 +109,7 @@ namespace Engine
             Quest clearFarmersField =
                 new Quest(
                     QUEST_ID_CLEAR_FARMERS_FIELD,
-                    "Whose using the barn?",
+                    "Whose using the Barn?",
                     "I can't believe Farm Head John is dead... Something supernatural is going on. *sobs* Sorry to ask, but can you figure out why people are still going to his farm house?", 30, 20);
 
             clearFarmersField.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID(ITEM_ID_PARCHMENT_PAPER), 3));
@@ -139,7 +139,7 @@ namespace Engine
             Location farmersField = new Location(LOCATION_ID_FARM_FIELD, "Farmer's field", "Fields of cultivated cornstalks, there's a large circle clearing and faint sounds of chanting far away.");
             farmersField.MonsterLivingHere = MonsterByID(MONSTER_ID_CULTIST);
 
-            Location guardPost = new Location(LOCATION_ID_GUARD_POST, "Guard post", "A hooded figure with red-glowing eyes. He has a chain around his neck. His piercing gaze seemingly on guard.", ItemByID(ITEM_ID_NECRONOMICON));
+            Location guardPost = new Location(LOCATION_ID_GUARD_POST, "Guard post", "A hooded figure with red-glowing eyes. He has a chain around his neck. His piercing gaze sweeps the grounds, seemingly on guard.", ItemByID(ITEM_ID_NECRONOMICON));
 
             Location bridge = new Location(LOCATION_ID_BRIDGE, "Bridge", "A stone bridge crosses a wide river.");
 

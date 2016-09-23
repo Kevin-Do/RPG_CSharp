@@ -31,3 +31,4 @@ C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\Wind
 C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SuperAdventure.resources
 C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\SuperAdventure.csproj.GenerateResource.Cache
+C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\SuperAdventure.SuperAdventure.resources
