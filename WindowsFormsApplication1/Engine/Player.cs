@@ -13,7 +13,6 @@ namespace Engine
         public int Level { get; set; }
         public string Job { get; set; }
         public string Name { get; set; }
-        public Location CurrentLocation { get; set; }
 
         // Lists //
 
@@ -27,7 +26,7 @@ namespace Engine
             Level = level;
             Job = job;
             Name = pName;
-        
+
             Inventory = new List<InventoryItem>();
             Quests = new List<PlayerQuest>();
 
