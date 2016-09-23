@@ -223,7 +223,7 @@
             this.btnSouth.TabIndex = 20;
             this.btnSouth.Text = "South";
             this.btnSouth.UseVisualStyleBackColor = true;
-            this.btnSouth.Click += new System.EventHandler(this.btnWest_Click);
+            this.btnSouth.Click += new System.EventHandler(this.btnWest_Click_1);
             // 
             // btnWest
             // 
@@ -238,12 +238,13 @@
             // 
             // rtbMessages
             // 
-            this.rtbMessages.Location = new System.Drawing.Point(891, 354);
+            this.rtbMessages.Location = new System.Drawing.Point(891, 23);
             this.rtbMessages.Name = "rtbMessages";
             this.rtbMessages.ReadOnly = true;
-            this.rtbMessages.Size = new System.Drawing.Size(241, 341);
+            this.rtbMessages.Size = new System.Drawing.Size(241, 672);
             this.rtbMessages.TabIndex = 22;
             this.rtbMessages.Text = "";
+            this.rtbMessages.TextChanged += new System.EventHandler(this.rtbMessages_TextChanged);
             // 
             // rtbLocation
             // 
