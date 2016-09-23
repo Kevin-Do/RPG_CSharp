@@ -61,7 +61,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(254, 357);
+            this.label1.Location = new System.Drawing.Point(255, 505);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 22);
@@ -72,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(254, 323);
+            this.label2.Location = new System.Drawing.Point(255, 471);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 22);
@@ -82,7 +82,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(254, 396);
+            this.label3.Location = new System.Drawing.Point(255, 544);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 22);
@@ -94,7 +94,7 @@
             // 
             this.lblLevel.AccessibleName = "";
             this.lblLevel.AutoSize = true;
-            this.lblLevel.Location = new System.Drawing.Point(380, 323);
+            this.lblLevel.Location = new System.Drawing.Point(381, 471);
             this.lblLevel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(0, 22);
@@ -105,7 +105,7 @@
             // lblGold
             // 
             this.lblGold.AutoSize = true;
-            this.lblGold.Location = new System.Drawing.Point(380, 433);
+            this.lblGold.Location = new System.Drawing.Point(381, 581);
             this.lblGold.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGold.Name = "lblGold";
             this.lblGold.Size = new System.Drawing.Size(0, 22);
@@ -114,7 +114,7 @@
             // lblHealth
             // 
             this.lblHealth.AutoSize = true;
-            this.lblHealth.Location = new System.Drawing.Point(380, 357);
+            this.lblHealth.Location = new System.Drawing.Point(381, 505);
             this.lblHealth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHealth.Name = "lblHealth";
             this.lblHealth.Size = new System.Drawing.Size(0, 22);
@@ -124,7 +124,7 @@
             // lblXP
             // 
             this.lblXP.AutoSize = true;
-            this.lblXP.Location = new System.Drawing.Point(380, 396);
+            this.lblXP.Location = new System.Drawing.Point(381, 544);
             this.lblXP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblXP.Name = "lblXP";
             this.lblXP.Size = new System.Drawing.Size(0, 22);
@@ -133,7 +133,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(254, 433);
+            this.label8.Location = new System.Drawing.Point(255, 581);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 22);
@@ -164,16 +164,16 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(593, 570);
+            this.label4.Location = new System.Drawing.Point(856, 471);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 25);
+            this.label4.Size = new System.Drawing.Size(143, 25);
             this.label4.TabIndex = 13;
             this.label4.Text = "Select Action";
             // 
             // cboWeapons
             // 
             this.cboWeapons.FormattingEnabled = true;
-            this.cboWeapons.Location = new System.Drawing.Point(680, 612);
+            this.cboWeapons.Location = new System.Drawing.Point(943, 513);
             this.cboWeapons.Name = "cboWeapons";
             this.cboWeapons.Size = new System.Drawing.Size(121, 30);
             this.cboWeapons.TabIndex = 14;
@@ -181,7 +181,7 @@
             // cboPotions
             // 
             this.cboPotions.FormattingEnabled = true;
-            this.cboPotions.Location = new System.Drawing.Point(939, 613);
+            this.cboPotions.Location = new System.Drawing.Point(942, 561);
             this.cboPotions.Name = "cboPotions";
             this.cboPotions.Size = new System.Drawing.Size(121, 30);
             this.cboPotions.TabIndex = 15;
@@ -189,7 +189,7 @@
             // btnUseWeapon
             // 
             this.btnUseWeapon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUseWeapon.Location = new System.Drawing.Point(583, 612);
+            this.btnUseWeapon.Location = new System.Drawing.Point(846, 513);
             this.btnUseWeapon.Name = "btnUseWeapon";
             this.btnUseWeapon.Size = new System.Drawing.Size(75, 30);
             this.btnUseWeapon.TabIndex = 16;
@@ -199,7 +199,7 @@
             // btnUsePotion
             // 
             this.btnUsePotion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUsePotion.Location = new System.Drawing.Point(843, 613);
+            this.btnUsePotion.Location = new System.Drawing.Point(846, 561);
             this.btnUsePotion.Name = "btnUsePotion";
             this.btnUsePotion.Size = new System.Drawing.Size(75, 30);
             this.btnUsePotion.TabIndex = 17;
@@ -209,17 +209,18 @@
             // btnNorth
             // 
             this.btnNorth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnNorth.Location = new System.Drawing.Point(364, 566);
+            this.btnNorth.Location = new System.Drawing.Point(663, 485);
             this.btnNorth.Name = "btnNorth";
             this.btnNorth.Size = new System.Drawing.Size(69, 30);
             this.btnNorth.TabIndex = 18;
             this.btnNorth.Text = "North";
             this.btnNorth.UseVisualStyleBackColor = true;
+            this.btnNorth.Click += new System.EventHandler(this.btnNorth_Click);
             // 
             // btnEast
             // 
             this.btnEast.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEast.Location = new System.Drawing.Point(461, 617);
+            this.btnEast.Location = new System.Drawing.Point(736, 529);
             this.btnEast.Name = "btnEast";
             this.btnEast.Size = new System.Drawing.Size(69, 30);
             this.btnEast.TabIndex = 19;
@@ -229,7 +230,7 @@
             // btnSouth
             // 
             this.btnSouth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSouth.Location = new System.Drawing.Point(364, 665);
+            this.btnSouth.Location = new System.Drawing.Point(663, 577);
             this.btnSouth.Name = "btnSouth";
             this.btnSouth.Size = new System.Drawing.Size(69, 30);
             this.btnSouth.TabIndex = 20;
@@ -239,7 +240,7 @@
             // btnWest
             // 
             this.btnWest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnWest.Location = new System.Drawing.Point(258, 617);
+            this.btnWest.Location = new System.Drawing.Point(586, 529);
             this.btnWest.Name = "btnWest";
             this.btnWest.Size = new System.Drawing.Size(69, 30);
             this.btnWest.TabIndex = 21;
@@ -248,7 +249,7 @@
             // 
             // rtbMessages
             // 
-            this.rtbMessages.Location = new System.Drawing.Point(583, 492);
+            this.rtbMessages.Location = new System.Drawing.Point(584, 640);
             this.rtbMessages.Name = "rtbMessages";
             this.rtbMessages.ReadOnly = true;
             this.rtbMessages.Size = new System.Drawing.Size(548, 55);
@@ -257,7 +258,7 @@
             // 
             // rtbLocation
             // 
-            this.rtbLocation.Location = new System.Drawing.Point(258, 492);
+            this.rtbLocation.Location = new System.Drawing.Point(259, 640);
             this.rtbLocation.Name = "rtbLocation";
             this.rtbLocation.ReadOnly = true;
             this.rtbLocation.Size = new System.Drawing.Size(289, 55);
@@ -339,9 +340,11 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SuperAdventure";
             this.Opacity = 0.98D;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Highgate Hysteria";
             this.TopMost = true;

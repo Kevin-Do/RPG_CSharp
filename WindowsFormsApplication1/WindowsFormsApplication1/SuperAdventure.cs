@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using Engine;
 
 namespace WindowsFormsApplication1
@@ -54,6 +55,11 @@ namespace WindowsFormsApplication1
         }
 
         private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNorth_Click(object sender, EventArgs e)
         {
 
         }
