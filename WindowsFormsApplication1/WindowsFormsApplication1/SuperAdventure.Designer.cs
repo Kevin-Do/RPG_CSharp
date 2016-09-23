@@ -223,7 +223,7 @@
             this.btnSouth.TabIndex = 20;
             this.btnSouth.Text = "South";
             this.btnSouth.UseVisualStyleBackColor = true;
-            this.btnSouth.Click += new System.EventHandler(this.btnWest_Click_1);
+            this.btnSouth.Click += new System.EventHandler(this.btnSouth_Click);
             // 
             // btnWest
             // 

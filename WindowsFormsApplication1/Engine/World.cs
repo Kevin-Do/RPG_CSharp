@@ -123,9 +123,9 @@ namespace Engine
         private static void PopulateLocations()
         {
             // Create each location
-            Location home = new Location(LOCATION_ID_HOME, "Home", "Your rented room. This place is fucking disgusting.");
+            Location home = new Location(LOCATION_ID_HOME, "Home", "Your rented room. This place is moldy and the wood is falling apart...");
 
-            Location townSquare = new Location(LOCATION_ID_TOWN_SQUARE, "Town square", "Cobblestoned ground with a few loiters and empty stores... ");
+            Location townSquare = new Location(LOCATION_ID_TOWN_SQUARE, "Town square", "Cobblestoned town center with a few loiters and empty stores... ");
 
             Location alchemistHut = new Location(LOCATION_ID_ALCHEMIST_HUT, "Alchemist's hut", "Toxic chemicals and flumes waft in the air. You can't help but cover your nose. There a lot of dissected flesh... humans?");
             alchemistHut.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_ALCHEMIST_GARDEN);

@@ -52,7 +52,7 @@ namespace WindowsFormsApplication1
             //Does the location have any required items
             if (!_player.HasRequiredItemToEnterThisLocation(newLocation))
             {
-                rtbMessages.Text += "You must have a " + newLocation.ItemRequiredToEnter.Name + " to enter this location." + Environment.NewLine;
+                rtbMessages.Text += "The hooded figure shakes angrily at you, YOU NEED A " + newLocation.ItemRequiredToEnter.Name + "! GET OUT!" + Environment.NewLine;
                 return;
             }
 
@@ -70,7 +70,7 @@ namespace WindowsFormsApplication1
             rtbLocation.Text += newLocation.Description + Environment.NewLine;
 
             // Completely heal the player
-            _player.CurrentHealth = _player.MaximumHealth;
+            //_player.CurrentHealth = _player.MaximumHealth;
 
             // Update Hit Points in UI
             lblHealth.Text = _player.CurrentHealth.ToString();
@@ -96,13 +96,13 @@ namespace WindowsFormsApplication1
                         {
                             // Display message
                             rtbMessages.Text += Environment.NewLine;
-                            rtbMessages.Text += "You complete the '" + newLocation.QuestAvailableHere.Name + "' quest." + Environment.NewLine;
+                            rtbMessages.Text += "You completed the '" + newLocation.QuestAvailableHere.Name + "' quest." + Environment.NewLine;
 
                             // Remove quest items from inventory
                             _player.RemoveQuestCompletionItems(newLocation.QuestAvailableHere);
 
                             // Give quest rewards
-                            rtbMessages.Text += "You receive: " + Environment.NewLine;
+                            rtbMessages.Text += "The quest has given you: " + Environment.NewLine;
                             rtbMessages.Text += newLocation.QuestAvailableHere.RewardExperience.ToString() + " experience points" + Environment.NewLine;
                             rtbMessages.Text += newLocation.QuestAvailableHere.RewardGold.ToString() + " gold" + Environment.NewLine;
                             rtbMessages.Text += newLocation.QuestAvailableHere.RewardItem.Name + Environment.NewLine;
@@ -124,7 +124,7 @@ namespace WindowsFormsApplication1
                     // The player does not already have the quest
 
                     // Display the messages
-                    rtbMessages.Text += "You receive the " + newLocation.QuestAvailableHere.Name + " quest." + Environment.NewLine;
+                    rtbMessages.Text += "A villager asks you to help them with ..." + newLocation.QuestAvailableHere.Name + "." + Environment.NewLine;
                     rtbMessages.Text += newLocation.QuestAvailableHere.Description + Environment.NewLine;
                     rtbMessages.Text += "To complete it, return with:" + Environment.NewLine;
                     foreach (QuestCompletionItem qci in newLocation.QuestAvailableHere.QuestCompletionItems)
@@ -148,12 +148,13 @@ namespace WindowsFormsApplication1
             // Does the location have a monster?
             if (newLocation.MonsterLivingHere != null)
             {
+
                 rtbMessages.Text += "You see a " + newLocation.MonsterLivingHere.Name + Environment.NewLine;
 
                 // Make a new monster, using the values from the standard monster in the World.Monster list
                 Monster standardMonster = World.MonsterByID(newLocation.MonsterLivingHere.ID);
 
-                _currentMonster = new Monster(standardMonster.ID, standardMonster.Description, standardMonster.Name, standardMonster.MaximumDamage,
+                _currentMonster = new Monster(standardMonster.ID, standardMonster.Name, standardMonster.Description, standardMonster.MaximumDamage,
                     standardMonster.RewardExperience, standardMonster.RewardGold, standardMonster.CurrentHealth, standardMonster.MaximumHealth);
 
                 foreach (LootItem lootItem in standardMonster.LootTable)
@@ -174,6 +175,7 @@ namespace WindowsFormsApplication1
                 cboPotions.Visible = false;
                 btnUseWeapon.Visible = false;
                 btnUsePotion.Visible = false;
+
             }
 
             // Refresh player's inventory list
@@ -194,7 +196,7 @@ namespace WindowsFormsApplication1
             dgvInventory.RowHeadersVisible = false;
 
             dgvInventory.ColumnCount = 2;
-            dgvInventory.Columns[0].Name = "Name";
+            dgvInventory.Columns[0].Name = "Item";
             dgvInventory.Columns[0].Width = 197;
             dgvInventory.Columns[1].Name = "Quantity";
 
@@ -214,9 +216,9 @@ namespace WindowsFormsApplication1
             dgvQuests.RowHeadersVisible = false;
 
             dgvQuests.ColumnCount = 2;
-            dgvQuests.Columns[0].Name = "Name";
+            dgvQuests.Columns[0].Name = "Quest";
             dgvQuests.Columns[0].Width = 197;
-            dgvQuests.Columns[1].Name = "Done?";
+            dgvQuests.Columns[1].Name = "Completed";
 
             dgvQuests.Rows.Clear();
 
@@ -301,6 +303,7 @@ namespace WindowsFormsApplication1
         {
             MoveTo(_player.CurrentLocation.LocationToWest);
         }
+
 
         private void btnUseWeapon_Click_1(object sender, EventArgs e)
         {
@@ -475,5 +478,6 @@ namespace WindowsFormsApplication1
             rtbMessages.ScrollToCaret();
         
         }
+
     }
 }
