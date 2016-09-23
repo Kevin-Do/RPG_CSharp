@@ -61,18 +61,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(255, 505);
+            this.label1.Location = new System.Drawing.Point(25, 238);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Health";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(255, 471);
+            this.label2.Location = new System.Drawing.Point(25, 204);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 22);
@@ -82,30 +81,28 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(255, 544);
+            this.label3.Location = new System.Drawing.Point(25, 277);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 22);
             this.label3.TabIndex = 3;
             this.label3.Text = "XP";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblLevel
             // 
             this.lblLevel.AccessibleName = "";
             this.lblLevel.AutoSize = true;
-            this.lblLevel.Location = new System.Drawing.Point(381, 471);
+            this.lblLevel.Location = new System.Drawing.Point(151, 204);
             this.lblLevel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(0, 22);
             this.lblLevel.TabIndex = 4;
             this.lblLevel.UseMnemonic = false;
-            this.lblLevel.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblGold
             // 
             this.lblGold.AutoSize = true;
-            this.lblGold.Location = new System.Drawing.Point(381, 581);
+            this.lblGold.Location = new System.Drawing.Point(151, 314);
             this.lblGold.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGold.Name = "lblGold";
             this.lblGold.Size = new System.Drawing.Size(0, 22);
@@ -114,7 +111,7 @@
             // lblHealth
             // 
             this.lblHealth.AutoSize = true;
-            this.lblHealth.Location = new System.Drawing.Point(381, 505);
+            this.lblHealth.Location = new System.Drawing.Point(151, 238);
             this.lblHealth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHealth.Name = "lblHealth";
             this.lblHealth.Size = new System.Drawing.Size(0, 22);
@@ -124,7 +121,7 @@
             // lblXP
             // 
             this.lblXP.AutoSize = true;
-            this.lblXP.Location = new System.Drawing.Point(381, 544);
+            this.lblXP.Location = new System.Drawing.Point(151, 277);
             this.lblXP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblXP.Name = "lblXP";
             this.lblXP.Size = new System.Drawing.Size(0, 22);
@@ -133,7 +130,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(255, 581);
+            this.label8.Location = new System.Drawing.Point(25, 314);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 22);
@@ -148,7 +145,6 @@
             this.player_name.Name = "player_name";
             this.player_name.Size = new System.Drawing.Size(0, 30);
             this.player_name.TabIndex = 11;
-            this.player_name.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // lblPlayerJob
             // 
@@ -209,7 +205,7 @@
             // btnNorth
             // 
             this.btnNorth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnNorth.Location = new System.Drawing.Point(663, 485);
+            this.btnNorth.Location = new System.Drawing.Point(654, 473);
             this.btnNorth.Name = "btnNorth";
             this.btnNorth.Size = new System.Drawing.Size(69, 30);
             this.btnNorth.TabIndex = 18;
@@ -220,7 +216,7 @@
             // btnEast
             // 
             this.btnEast.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEast.Location = new System.Drawing.Point(736, 529);
+            this.btnEast.Location = new System.Drawing.Point(727, 517);
             this.btnEast.Name = "btnEast";
             this.btnEast.Size = new System.Drawing.Size(69, 30);
             this.btnEast.TabIndex = 19;
@@ -230,7 +226,7 @@
             // btnSouth
             // 
             this.btnSouth.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSouth.Location = new System.Drawing.Point(663, 577);
+            this.btnSouth.Location = new System.Drawing.Point(654, 565);
             this.btnSouth.Name = "btnSouth";
             this.btnSouth.Size = new System.Drawing.Size(69, 30);
             this.btnSouth.TabIndex = 20;
@@ -240,7 +236,7 @@
             // btnWest
             // 
             this.btnWest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnWest.Location = new System.Drawing.Point(586, 529);
+            this.btnWest.Location = new System.Drawing.Point(577, 517);
             this.btnWest.Name = "btnWest";
             this.btnWest.Size = new System.Drawing.Size(69, 30);
             this.btnWest.TabIndex = 21;
@@ -249,19 +245,19 @@
             // 
             // rtbMessages
             // 
-            this.rtbMessages.Location = new System.Drawing.Point(584, 640);
+            this.rtbMessages.Location = new System.Drawing.Point(470, 613);
             this.rtbMessages.Name = "rtbMessages";
             this.rtbMessages.ReadOnly = true;
-            this.rtbMessages.Size = new System.Drawing.Size(548, 55);
+            this.rtbMessages.Size = new System.Drawing.Size(662, 82);
             this.rtbMessages.TabIndex = 22;
             this.rtbMessages.Text = "";
             // 
             // rtbLocation
             // 
-            this.rtbLocation.Location = new System.Drawing.Point(259, 640);
+            this.rtbLocation.Location = new System.Drawing.Point(29, 613);
             this.rtbLocation.Name = "rtbLocation";
             this.rtbLocation.ReadOnly = true;
-            this.rtbLocation.Size = new System.Drawing.Size(289, 55);
+            this.rtbLocation.Size = new System.Drawing.Size(435, 82);
             this.rtbLocation.TabIndex = 23;
             this.rtbLocation.Text = "";
             // 
@@ -279,8 +275,9 @@
             this.dgvInventory.ReadOnly = true;
             this.dgvInventory.RowHeadersVisible = false;
             this.dgvInventory.RowTemplate.Height = 24;
-            this.dgvInventory.Size = new System.Drawing.Size(197, 286);
+            this.dgvInventory.Size = new System.Drawing.Size(197, 194);
             this.dgvInventory.TabIndex = 24;
+            this.dgvInventory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventory_CellContentClick);
             // 
             // dgvQuests
             // 
@@ -290,13 +287,13 @@
             this.dgvQuests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvQuests.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvQuests.Enabled = false;
-            this.dgvQuests.Location = new System.Drawing.Point(29, 199);
+            this.dgvQuests.Location = new System.Drawing.Point(232, 473);
             this.dgvQuests.MultiSelect = false;
             this.dgvQuests.Name = "dgvQuests";
             this.dgvQuests.ReadOnly = true;
             this.dgvQuests.RowHeadersVisible = false;
             this.dgvQuests.RowTemplate.Height = 24;
-            this.dgvQuests.Size = new System.Drawing.Size(197, 187);
+            this.dgvQuests.Size = new System.Drawing.Size(297, 130);
             this.dgvQuests.TabIndex = 25;
             // 
             // pictureBox1
@@ -348,7 +345,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Highgate Hysteria";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.SuperAdventure_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuests)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
