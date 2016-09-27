@@ -66,7 +66,7 @@ namespace Engine
             Items.Add(new Weapon(ITEM_ID_CLUB, "Wooden Club", "Wooden Clubs", "A battered slab of wood", 3, 10, 15));
             Items.Add(new Weapon(ITEM_ID_SILVER_PISTOL,"Silver Pistol", "Silver Pistols", "A short snout revolver", 9, 18, 27)); // new item
             Items.Add(new Weapon(ITEM_ID_BLESSED_RIFLE, "Firearm Long Rifle", "Firearm Long Rifles", "The Vampire Hunter Special with cross encrusted bullets", 66, 77, 1337)); // new item
-            Items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 5));
+            Items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 35));
 
             Items.Add(new Item(ITEM_ID_DEAD_FLESH, "Lump of disgusting human flesh", "Lumps of disgusting human flesh"));
             Items.Add(new Item(ITEM_ID_ROTTEN_ABSCESS, "Pool of excreted pus", "Pool of excreted pus"));
@@ -104,7 +104,7 @@ namespace Engine
 
             clearAlchemistGarden.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID(ITEM_ID_DEAD_FLESH), 3));
 
-            clearAlchemistGarden.RewardItem = ItemByID(ITEM_ID_HEALING_POTION);
+            clearAlchemistGarden.RewardItem = ItemByID(ITEM_ID_SILVER_PISTOL);
 
             Quest clearFarmersField =
                 new Quest(
@@ -112,7 +112,7 @@ namespace Engine
                     "Whose using the barn?",
                     "I can't believe Farm Head John is dead... Something supernatural is going on. *sobs* Sorry to ask, but can you figure out why people are still going to his farm house?", 30, 20);
 
-            clearFarmersField.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID(ITEM_ID_PARCHMENT_PAPER), 3));
+            clearFarmersField.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID(ITEM_ID_PARCHMENT_PAPER), 1));
 
             clearFarmersField.RewardItem = ItemByID(ITEM_ID_NECRONOMICON);
 

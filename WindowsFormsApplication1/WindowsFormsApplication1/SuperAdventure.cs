@@ -133,6 +133,7 @@ namespace WindowsFormsApplication1
                             // Display message
                             rtbMessages.Text += Environment.NewLine;
                             rtbMessages.Text += "You completed the '" + newLocation.QuestAvailableHere.Name + "' quest." + Environment.NewLine;
+                            _player.Inventory.Add(new InventoryItem(World.ItemByID(World.ITEM_ID_HEALING_POTION), 5));
 
                             // Remove quest items from inventory
                             _player.RemoveQuestCompletionItems(newLocation.QuestAvailableHere);
@@ -202,15 +203,20 @@ namespace WindowsFormsApplication1
                 cboPotions.Visible = true;
                 btnUseWeapon.Visible = true;
                 btnUsePotion.Visible = true;
+
+                cboWeapons.Enabled = true;
+                cboPotions.Enabled = true;
+                btnUseWeapon.Enabled = true;
+                btnUsePotion.Enabled = true;
             }
             else
             {
                 _currentMonster = null;
 
-                cboWeapons.Visible = false;
-                cboPotions.Visible = false;
-                btnUseWeapon.Visible = false;
-                btnUsePotion.Visible = false;
+                cboWeapons.Enabled = false;
+                cboPotions.Enabled = false;
+                btnUseWeapon.Enabled = false;
+                btnUsePotion.Enabled = false;
 
             }
 
@@ -282,8 +288,8 @@ namespace WindowsFormsApplication1
             if (weapons.Count == 0)
             {
                 // The player doesn't have any weapons, so hide the weapon combobox and "Use" button
-                cboWeapons.Visible = false;
-                btnUseWeapon.Visible = false;
+                cboWeapons.Enabled = false;
+                btnUseWeapon.Enabled = false;
             }
             else
             {
@@ -313,8 +319,8 @@ namespace WindowsFormsApplication1
             if (healingPotions.Count == 0)
             {
                 // The player doesn't have any potions, so hide the potion combobox and "Use" button
-                cboPotions.Visible = false;
-                btnUsePotion.Visible = false;
+                cboPotions.Enabled = false;
+                btnUsePotion.Enabled = false;
             }
             else
             {
