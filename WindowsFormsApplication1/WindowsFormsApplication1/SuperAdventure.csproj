@@ -89,6 +89,36 @@
   <ItemGroup>
     <None Include="Resources\Highgate Cem Black magic markings PNG.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12-abandoned-town-large-squ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3079554813_2a040dc629_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adec725b82a5560754d30a33b725984a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alchemy_lab_by_jonsmith512-d993woi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antique-Italian-Tower-Room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Art-dark-car-forest-night-ride-bush-the-moon-mercedes-spider-horror.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beebo-wallace,house-fall-abandoned-home-rural-nc-farm-country-northcarolina-cornstalks-pittcounty-pittcountync.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corn-maze.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3a5500b4523e1494994e49ce5d269ca.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

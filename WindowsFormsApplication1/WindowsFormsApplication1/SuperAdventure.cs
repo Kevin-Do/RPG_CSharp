@@ -23,6 +23,7 @@ namespace WindowsFormsApplication1
 
             _player = new Player(5, 0, 1, "Deputy", 100, 100, "Kathie Tucson");
             MoveTo(World.LocationByID(World.LOCATION_ID_HOME));
+            LocationPicture(_player.CurrentLocation);
             _player.Inventory.Add(new InventoryItem(World.ItemByID(World.ITEM_ID_RUSTY_SWORD), 1));
 
             lblHealth.Text = _player.CurrentHealth.ToString();
@@ -38,15 +39,50 @@ namespace WindowsFormsApplication1
         private void btnNorth_Click(object sender, EventArgs e)
         {
             MoveTo(_player.CurrentLocation.LocationToNorth);
+            LocationPicture(_player.CurrentLocation);
         }
 
 
         private void btnSouth_Click(object sender, EventArgs e)
         {
             MoveTo(_player.CurrentLocation.LocationToSouth);
+            LocationPicture(_player.CurrentLocation);
         }
 
-    
+        private void LocationPicture(Location newLocation)
+        {
+  
+            switch (newLocation.ID)
+            {
+                case 1:
+                    pictureBox2.Image = Image.FromFile(@"C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\Resources\Antique-Italian-Tower-Room.jpg");
+                    break;
+                case 2:
+                    pictureBox2.Image = Image.FromFile(@"C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\Resources\12-abandoned-town-large-squ.jpg");
+                    break;
+                case 3:
+                    pictureBox2.Image = Image.FromFile(@"C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\Resources\3079554813_2a040dc629_b.jpg");
+                    break;
+                case 4:
+                    pictureBox2.Image = Image.FromFile(@"C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\Resources\alchemy_lab_by_jonsmith512-d993woi.jpg");
+                    break;
+                case 5:
+                    pictureBox2.Image = Image.FromFile(@"C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\Resources\adec725b82a5560754d30a33b725984a.jpg");
+                    break;
+                case 6:
+                    pictureBox2.Image = Image.FromFile(@"C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\Resources\beebo-wallace,house-fall-abandoned-home-rural-nc-farm-country-northcarolina-cornstalks-pittcounty-pittcountync.jpg");
+                    break;
+                case 7:
+                    pictureBox2.Image = Image.FromFile(@"C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\Resources\corn-maze.jpg");
+                    break;
+                case 8:
+                    pictureBox2.Image = Image.FromFile(@"C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\Resources\e3a5500b4523e1494994e49ce5d269ca.jpg");
+                    break;
+                case 9:
+                    pictureBox2.Image = Image.FromFile(@"C:\Users\krusa\OneDrive\Documents\Visual Studio 2015\Projects\VampSharp-RPG\WindowsFormsApplication1\WindowsFormsApplication1\Resources\Art-dark-car-forest-night-ride-bush-the-moon-mercedes-spider-horror.jpg");
+                    break;
+            }
+        }
         private void MoveTo(Location newLocation)
         {
             //Does the location have any required items
@@ -297,11 +333,13 @@ namespace WindowsFormsApplication1
         private void btnEast_Click_1(object sender, EventArgs e)
         {
             MoveTo(_player.CurrentLocation.LocationToEast);
+            LocationPicture(_player.CurrentLocation);
         }
 
         private void btnWest_Click_1(object sender, EventArgs e)
         {
             MoveTo(_player.CurrentLocation.LocationToWest);
+            LocationPicture(_player.CurrentLocation);
         }
 
 
