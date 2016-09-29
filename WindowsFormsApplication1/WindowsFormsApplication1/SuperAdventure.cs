@@ -161,8 +161,8 @@ namespace WindowsFormsApplication1
                     // The player does not already have the quest
 
                     // Display the messages
-                    rtbMessages.Text += "A villager asks you to help them with ..." + newLocation.QuestAvailableHere.Name + "." + Environment.NewLine;
-                    rtbMessages.Text += newLocation.QuestAvailableHere.Description + Environment.NewLine;
+                    rtbMessages.Text += Environment.NewLine +"A villager asks you to help them with ..." + newLocation.QuestAvailableHere.Name + "." + Environment.NewLine;
+                    rtbMessages.Text += Environment.NewLine + newLocation.QuestAvailableHere.Description + Environment.NewLine;
                     rtbMessages.Text += "To complete it, return with:" + Environment.NewLine;
                     foreach (QuestCompletionItem qci in newLocation.QuestAvailableHere.QuestCompletionItems)
                     {

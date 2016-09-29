@@ -76,7 +76,7 @@ namespace Engine
         private static void PopulateMonsters()
         {
             Monster cultist = new Monster(MONSTER_ID_CULTIST, "Satanic Worshipper", "A dark hooded figure crosses your path, blood symbols splatter its ragged garments... ", 3, 3, 5, 5, 5);  // CULTIST
-            cultist.LootTable.Add(new LootItem(ItemByID(ITEM_ID_PARCHMENT_PAPER), 5, false));
+            cultist.LootTable.Add(new LootItem(ItemByID(ITEM_ID_PARCHMENT_PAPER), 35, false));
             cultist.LootTable.Add(new LootItem(ItemByID(ITEM_ID_RAGGED_CLOTH), 85, true));
 
             Monster ghoul = new Monster(MONSTER_ID_GHOUL, "Black Apparition", "A hulking figure phases into perspective, it distorts the air and ground, expelling caustic fumes...", 20, 7, 0, 20, 20); //GHOUL
