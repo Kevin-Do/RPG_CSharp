@@ -115,6 +115,7 @@ namespace Engine
             clearFarmersField.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID(ITEM_ID_PARCHMENT_PAPER), 1));
 
             clearFarmersField.RewardItem = ItemByID(ITEM_ID_NECRONOMICON);
+            clearFarmersField.RewardItem = ItemByID(ITEM_ID_BLESSED_RIFLE);
 
             Quests.Add(clearAlchemistGarden);
             Quests.Add(clearFarmersField);
