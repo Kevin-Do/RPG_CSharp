@@ -100,7 +100,7 @@ namespace Engine
                 new Quest(
                     QUEST_ID_CLEAR_ALCHEMIST_GARDEN,
                     "Investigate the Lab",
-                    "People have gone missing on errands heading north. I'm really worried, do you think you could find my three friends? Bring back anything you can!", 20, 10);
+                    "People have gone missing on errands heading north. I'm really worried," +Environment.NewLine+ "do you think you could find my three friends? Bring back anything you can!", 20, 10);
 
             clearAlchemistGarden.QuestCompletionItems.Add(new QuestCompletionItem(ItemByID(ITEM_ID_DEAD_FLESH), 3));
 
